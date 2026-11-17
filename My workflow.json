@@ -1,0 +1,70 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "2585c339-3560-4378-8b2f-921552a24863",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1EBvmf-RFBrH616YjTo2-sa9r4KwOrPjxLSY-Ds0Cmp8",
+          "mode": "list",
+          "cachedResultName": "RCTI Class Reps ",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1EBvmf-RFBrH616YjTo2-sa9r4KwOrPjxLSY-Ds0Cmp8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 2010086139,
+          "mode": "list",
+          "cachedResultName": "May 2023",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1EBvmf-RFBrH616YjTo2-sa9r4KwOrPjxLSY-Ds0Cmp8/edit#gid=2010086139"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        192,
+        0
+      ],
+      "id": "e57552a9-cc06-45c5-a87f-79d9a3c45e5e",
+      "name": "Get classreps data",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "xkprP9haVXjkpj7g",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "5691ae6e-6e4a-4576-8891-08f8b0898f8d",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "3bbfc506a234806b3fa0726a2266fc0bd4e63a0eae8a8bb9d2feb811a69a192c"
+  },
+  "nodeGroups": [],
+  "id": "H1SY8zzJMK9du7bV",
+  "tags": []
+}
